@@ -127,8 +127,48 @@ systemctl status httpd
 
 ```
 
+# Step 10: Verify Files
+
+```bash
+
+cd /var/www/html
+
+```
+
+```bash
+ls
+
+```
+
+# Expected Output
+
+file1 file2 file3 file4 file5 file6 file7 file8 file9 file10
+
+# 🌐 Testing (Optional)
+
+Open browser:
+
+``` bash
+http://<New-Public-IP>
+
+```
+
+# 🧠 Key Learnings
+AMI acts as a full backup of EC2 instance
+It includes:
+Operating System
+Installed packages (Apache)
+Files and configurations
+You can launch multiple identical instances using the same AMI
+Useful for:
+Disaster Recovery
+Auto Scaling
+Environment replication
 
 
+# ⭐ Final Thoughts
+
+This lab reflects a real-world cloud practice where systems are not rebuilt manually but replicated using images. It’s a foundational concept behind scalable and reliable cloud infrastructure.
 
 
 
