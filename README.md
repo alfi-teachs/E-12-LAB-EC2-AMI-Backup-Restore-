@@ -106,6 +106,7 @@ cd /var/www/html
 ```
 
 
+
 ```bash
 vi index.html 
 ```
@@ -117,6 +118,15 @@ touch file{1..10}
 
 ```bash
 ls
+```
+
+# 🌐 Testing (Optional)
+
+Open browser:
+
+``` bash
+http://<New-Public-IP>
+
 ```
 
 # Step 5: Create AMI (Backup)
