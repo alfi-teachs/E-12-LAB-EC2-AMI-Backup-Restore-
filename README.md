@@ -26,3 +26,33 @@ EC2 (t3.micro from AMI)
 
 
 ```
+
+# ⚙️ Prerequisites
+AWS Account
+Key Pair (ssh22.pem)
+Basic knowledge of SSH
+
+# Step 1: Launch EC2 Instance
+
+- Name: web-server-1
+- AMI: Amazon Linux 2
+-  Instance Type: t2.micro
+-  Key Pair: ssh22
+-  Security Group: Allow SSH (22) and HTTP (80)
+
+# Step 2: Connect to EC2
+
+```bash 
+ssh -i ssh22.pem ec2-user@<Public-IP>
+
+```
+
+```bash
+
+sudo su
+
+```
+
+
+
+
