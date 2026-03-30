@@ -69,7 +69,25 @@ systemctl start httpd
 ```bash
 systemctl enable httpd
 ```
+# Step 4: Create Sample Files
 
+```bash
+cd /var/www/html
+```
+
+# ADD HTML CONTENT
+
+```bash
+vi index.html 
+```
+
+```bash
+touch file{1..10}
+```
+
+```bash
+ls
+```
 
 
 
