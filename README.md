@@ -78,8 +78,38 @@ cd /var/www/html
 # ADD HTML CONTENT
 
 ```bash
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+    <style>
+        body {
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Hello World</h1>
+
+</body>
+</html>
+
+
+```
+
+
+```bash
 vi index.html 
 ```
+
 
 ```bash
 touch file{1..10}
