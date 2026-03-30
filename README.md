@@ -52,6 +52,28 @@ ssh -i ssh22.pem ec2-user@<Public-IP>
 sudo su
 
 ```
+# Step 3: Install Apache Web Server
+```bash
+yum install httpd -y
+```
+
+```bash
+sysystemctl start httpd
+```
+
+
+```bash
+systemctl start httpd
+```
+
+```bash
+systemctl enable httpd
+```
+
+
+
+
+
 
 
 
