@@ -159,11 +159,6 @@ systemctl status httpd
 
 # Step 10: Verify Files
 
-```bash
-
-cd /var/www/html
-
-```
 
 ```bash
 touch file{1..10}
