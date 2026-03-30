@@ -89,6 +89,44 @@ touch file{1..10}
 ls
 ```
 
+# Step 5: Create AMI (Backup)
+
+
+- EC2 → Instances → Select web-server-1
+-  Actions → Image → Create Image
+- Name: web-server-ami
+- Wait until AMI status = Available
+
+# Step 6: Stop Original Instance
+EC2 → Instances → Select web-server-1 → Stop
+
+# Step 7: Launch New Instance from AMI
+- EC2 → AMIs → Select web-server-ami → Launch Instance
+- Name: web-server-2
+- Instance Type: t3.micro
+-  Key Pair: ssh22
+-  Security Group: Allow SSH (22) and HTTP (80)
+
+  # Step 8: Connect to New Instance
+  
+  ```bash 
+  ssh -i ssh22.pem ec2-user@<New-Public-IP>
+
+```
+
+```bash
+sudo su
+
+```
+
+# Step 9: Verify Apache Service
+
+```bash
+
+systemctl status httpd
+
+```
+
 
 
 
