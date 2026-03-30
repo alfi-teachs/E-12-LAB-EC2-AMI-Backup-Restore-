@@ -166,8 +166,11 @@ cd /var/www/html
 ```
 
 ```bash
-ls
+touch file{1..10}
+```
 
+```bash
+ls
 ```
 
 # Expected Output
